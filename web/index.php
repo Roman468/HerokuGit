@@ -2,10 +2,16 @@
 //session_destroy();
 //if(session_status()==  PHP_SESSION_ACTIVE){  session_destroy(); }
 session_start();
-
-
 include "info.php";
-if (isset($_SESSION['userName']))   {
+$userIs =false;
+if (isset($_SESSION['userName'])){
+    if (strlen($_SESSION['userName'])>0){
+        $userIs =true;
+    }
+}
+
+
+if ( $userIs )   {
     echo "Здравствуйте - " . $_SESSION['userName'] ;
     echo "<br><a href='exit.php'>Exit</a>";
 }
