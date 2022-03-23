@@ -1,8 +1,6 @@
 {
-  "require" : {
-
-  },
-  "require-dev": {
-    "heroku/heroku-buildpack-php": "*"
-  }
+    "name": "master/heroku",
+    "description": "1St Deploy",
+    "minimum-stability": "stable",
+    "require": {}
 }
