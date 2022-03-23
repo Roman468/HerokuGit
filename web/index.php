@@ -6,7 +6,7 @@ session_start();
 
 include "info.php";
 if (isset($_SESSION['userName']))   {
-    echo "Здравствуйте " . $_SESSION['userName'] ;
+    echo "Здравствуйте - " . $_SESSION['userName'] ;
     echo "<br><a href='exit.php'>Exit</a>";
 }
 else {
